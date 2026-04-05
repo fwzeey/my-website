@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clickable Image Example</title>
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: red;
+        }
+        #msg {
+            margin-top: 20px;
+            color: green;
+            font-weight: bold;
+        }
+        .clickable-image {
+            width: 300px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Hello!</h1>
+
+<!-- Clickable Image acting as a button -->
+<img src="photo.jpg" class="clickable-image" onclick="goToYouTube()">
+
+<p id="msg"></p>
+
+<script>
+function goToYouTube() {
+    // Show a message
+    document.getElementById("msg").innerHTML = "Welcome to my website!";
+    // Redirect to YouTube
+    window.location.href = 'https://www.youtube.com/watch?v=wrmiIxc3yUk&list=RDlemhDXKp8OU&index=5';
+}
+</script>
+
+</body>
+</html>
